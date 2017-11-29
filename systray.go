@@ -144,6 +144,11 @@ func (item *MenuItem) Show() {
 	showMenuItem(item)
 }
 
+// Return title
+func (item *MenuItem) GetTitle() string {
+	return item.title
+}
+
 // Checked returns if the menu item has a check mark
 func (item *MenuItem) Checked() bool {
 	return item.checked
